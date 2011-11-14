@@ -1,5 +1,5 @@
 Package: popdemo
-Version: 0.1-2
+Version: 0.1-3
 Date: 2011-11-14
 Title: Provides Tools For Demographic Modelling Using Projection
         Matrices
@@ -21,6 +21,6 @@ Description: popdemo provides a set of tools designed for modelling
         popbio.
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: 2012-01-18 14:59:18 UTC; Iain
+Packaged: 2012-02-04 18:58:57 UTC; Iain
 Repository: CRAN
-Date/Publication: 2012-01-18 15:32:25
+Date/Publication: 2012-02-04 21:44:50
