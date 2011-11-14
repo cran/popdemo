@@ -436,10 +436,9 @@ readline("Hit <Enter> for next topic, or <Esc> to cancel")
 #e determines the relative magnitude of perturbation.
 #
 #Create a perturbation structure for the tortoise
-#that targets only the survival of the oldest
-#individuals:
+#that targets only growth of stage 7:
 d<-c(0,0,0,0,0,0,0,1)
-e<-c(0,0,0,0,0,0,0,1)
+e<-c(0,0,0,0,0,0,1,0)
 d%*%t(e)
 #
 #Create a perturbation structure for the tortoise
@@ -461,15 +460,15 @@ d%*%t(e)
 #and the range of perturbation magnitude, we can
 #match perturbation to its resultant asymptotic growth.
 #First, perturbing survival of old individuals:
-tflam1<-tfa(Tort, d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,0,1),
-            prange=seq(-0.5,0.1,0.01))
+tflam1<-tfa(Tort, d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,1,0),
+            prange=seq(-0.1,0.5,0.01))
 tflam1
 #
 #We can easily plot this:
 plot(tflam1)
 #
 #Perturbing fecundity:
-tflam2<-tfa(Tort, d=c(1,0,0,0,0,0,0,0), e=Tort[,1],
+tflam2<-tfa(Tort, d=c(1,0,0,0,0,0,0,0), e=Tort[1,],
             prange=seq(-1,2,0.1))
 tflam1
 #
@@ -513,14 +512,14 @@ readline("Hit <Enter> for next topic, or <Esc> to cancel")
 #population vector:
 Tortvec<-Matlab2R("[1;1;2;3;5;8;13;21]")
 tfin1<-inertia.tfa(Tort, vector=Tortvec, 
-                   d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,0,1),
-                   prange=seq(-0.5,0.1,0.01))
+                   d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,1,0),
+                   prange=seq(-0.1,0.5,0.01))
 tfin1
 plot(tfin1)
 #
 #Perturb fecundity, analysing upper bound:
 tfin2<-inertia.tfa(Tort, bound="upper",
-                   d=c(1,0,0,0,0,0,0,0), e=Tort[,1],
+                   d=c(1,0,0,0,0,0,0,0), e=Tort[1,],
                    prange=seq(-1,2,0.1))
 tfin2
 plot(tfin2)

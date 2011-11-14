@@ -17,6 +17,13 @@
 #
 #
 #
+#This matrix is for the desert tortoise
+#(Gopherus Agassizii) with medium fecundity
+#(Doak et al. 1994 Ecol. Appl., 4, 446-480).
+Tort<-Matlab2R("[0 0 0 0 0 1.3 1.98 2.57;0.716 0.567 0 0 0 0 0 0;0 0.149 0.567 0 0 0 0 0;0 0 0.149 0.604 0 0 0 0;0 0 0 0.235 0.56 0 0 0;0 0 0 0 0.225 0.678 0 0;0 0 0 0 0 0.249 0.851 0;0 0 0 0 0 0 0.016 0.86]")
+#
+#
+#
 #-------------------------------------------------
 #TRANSFER FUNCTION OF ASYMPTOTIC GROWTH
 #-------------------------------------------------
@@ -31,10 +38,9 @@
 #e determines the relative magnitude of perturbation.
 #
 #Create a perturbation structure for the tortoise
-#that targets only the survival of the oldest
-#individuals:
+#that targets only the growth of stage 7:
 d<-c(0,0,0,0,0,0,0,1)
-e<-c(0,0,0,0,0,0,0,1)
+e<-c(0,0,0,0,0,0,1,0)
 d%*%t(e)
 #
 #Create a perturbation structure for the tortoise
@@ -55,18 +61,18 @@ d%*%t(e)
 #By specifying the PPM, the perturbation structure,
 #and the range of perturbation magnitude, we can
 #match perturbation to its resultant asymptotic growth.
-#First, perturbing survival of old individuals:
-tflam1<-tfa(Tort, d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,0,1),
-            prange=seq(-0.5,0.1,0.01))
+#First, perturbing growth of stage 7:
+tflam1<-tfa(Tort, d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,1,0),
+            prange=seq(-0.1,0.5,0.01))
 tflam1
 #
 #We can easily plot this:
 plot(tflam1)
 #
 #Perturbing fecundity:
-tflam2<-tfa(Tort, d=c(1,0,0,0,0,0,0,0), e=Tort[,1],
+tflam2<-tfa(Tort, d=c(1,0,0,0,0,0,0,0), e=Tort[1,],
             prange=seq(-1,2,0.1))
-tflam1
+tflam2
 #
 #Plot:
 plot(tflam2)
@@ -103,19 +109,19 @@ readline("Hit <Enter> for next topic, or <Esc> to cancel")
 #to work with, or a command to calculate the
 #transfer function of the upper or lower bound.
 #
-#Transfer function that perturbs survival
-#of the oldest individuals, using a specified
+#Transfer function that perturbs growth
+#of stage 7, using a specified
 #population vector:
 Tortvec<-Matlab2R("[1;1;2;3;5;8;13;21]")
-tfin1<-inertia.tfa(Tort, vector=Tortvec2, 
-                   d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,0,1),
-                   prange=seq(-0.5,0.1,0.01))
+tfin1<-inertia.tfa(Tort, vector=Tortvec, 
+                   d=c(0,0,0,0,0,0,0,1), e=c(0,0,0,0,0,0,1,0),
+                   prange=seq(-0.1,0.5,0.01))
 tfin1
 plot(tfin1)
 #
 #Perturb fecundity, analysing upper bound:
 tfin2<-inertia.tfa(Tort, bound="upper",
-                   d=c(1,0,0,0,0,0,0,0), e=Tort[,1],
+                   d=c(1,0,0,0,0,0,0,0), e=Tort[1,],
                    prange=seq(-1,2,0.1))
 tfin2
 plot(tfin2)

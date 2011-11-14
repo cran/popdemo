@@ -1,4 +1,5 @@
-0c2252329f785b6564e2ffbfb5a6ca03 *DESCRIPTION
+6548b0da2090cfb478d0f993fb231d96 *ChangeLog.txt
+e4e77460a00980e41a9fc0872362e472 *DESCRIPTION
 9857877f6b226fc01c5c80b958be8045 *NAMESPACE
 e905407a568782011309a76f3a6c1f49 *R/Cohen.cumulative.R
 9c2bad3f4c63320fa3f112c7b55f3fef *R/Keyfitz.delta.R
@@ -38,11 +39,11 @@ c4aba9d0427157198a814594fc1b3da0 *R/tfamatrix.R
 23264e085a0be1963eb86096ed5f4dbe *R/tfsensmatrix.R
 2f1a2e497051556a7f5305e399407663 *R/truelambda.R
 20d9098219392edb0c4fafb2c940034b *demo/00Index
-572332220daa2e141727f9e950fcedb6 *demo/convergence.R
+bd1f87539bccfa8654eb1d6aa2d5fc34 *demo/convergence.R
 9759ae3efc1e8f618139124847c294a8 *demo/matrixtools.R
-e7b96494a4d9e67f6c3b50bc64607ace *demo/popdemo.R
+20d61439097435509d608006b067d8de *demo/popdemo.R
 031352631c330710d07d2eedf157159b *demo/projection.R
-28f38056504c19b768d8ec7935f22001 *demo/transfer.R
+d227b57aaa289f0fccc34aa49a57d497 *demo/transfer.R
 9c892dc618253b7fd0e02df35c6e6510 *demo/transient.R
 a9c5f345cf296e5661e14d260906d978 *man/Cohen.cumulative.Rd
 ac7674505da4c7ffa072a0a2e081f67b *man/Keyfitz.delta.Rd
@@ -67,7 +68,7 @@ a501c3823486720634285d8d00047df2 *man/is.matrix_primitive.Rd
 d1841396b40ee28d3e7469b7054a9216 *man/plot.projection.Rd
 e7d626ca824a88e21f43f697b8cb3389 *man/plot.tfa.Rd
 8397f05d002b4772b70fd3e5933ff9f2 *man/plot.tfamatrix.Rd
-5d4375fb413dce4fcedabb591c0154ae *man/popdemo-package.Rd
+46e1f1d45e884997c7954abc766aaa37 *man/popdemo-package.Rd
 ff3d00f0245918f4de680a4cc51f7f1a *man/project.Rd
 42e20c3efedaaac89845e7bcc319a539 *man/projection.distance.Rd
 38c068b4a7719b6a4a7d23c127cb0315 *man/reactivity.Rd
