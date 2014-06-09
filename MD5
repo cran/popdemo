@@ -1,5 +1,5 @@
-0a4e2f00fa47c27f2bddfd4fc7d3b3a7 *ChangeLog.txt
-022dddb9058d47fe48ce8e9cdcefe3a1 *DESCRIPTION
+43adac407c4a7a92d07c1eb6ed4a186e *ChangeLog
+3899ef04b25ed6e964d7e1606990c803 *DESCRIPTION
 9857877f6b226fc01c5c80b958be8045 *NAMESPACE
 e905407a568782011309a76f3a6c1f49 *R/Cohen.cumulative.R
 9c2bad3f4c63320fa3f112c7b55f3fef *R/Keyfitz.delta.R
@@ -38,7 +38,7 @@ c4aba9d0427157198a814594fc1b3da0 *R/tfamatrix.R
 845aa3e405ab044ef20b0ab34e5975fb *R/tfsens.R
 23264e085a0be1963eb86096ed5f4dbe *R/tfsensmatrix.R
 2f1a2e497051556a7f5305e399407663 *R/truelambda.R
-6a2f93472d85e37cb3625c729302378f *data/Tort.rda
+01c4d03a70d827cbfe1b47809fe72bb5 *data/Tort.rda
 20d9098219392edb0c4fafb2c940034b *demo/00Index
 bd1f87539bccfa8654eb1d6aa2d5fc34 *demo/convergence.R
 9759ae3efc1e8f618139124847c294a8 *demo/matrixtools.R
