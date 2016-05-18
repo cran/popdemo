@@ -13,7 +13,7 @@ leigs<-eigen(t(A))
 lambda<-reigs$values[val]
 w<-as.matrix(reigs$vectors[,val])
 v<-as.matrix(leigs$vectors[,val])
-S<-(v%*%t(w))/as.vector(t(v)%*%w)
+S<-(Conj(v)%*%t(w))/as.vector(Conj(t(v))%*%w)
 E<-(1/lambda)*S*A
 if(max(Im(E))>0) return(E) else(return(Re(E)))
 }

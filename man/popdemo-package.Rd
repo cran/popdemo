@@ -2,10 +2,10 @@
 \alias{popdemo}
 \docType{package}
 \title{
-    Provides tools for demographic modelling using projection matrices
+    Demographic Modelling Using Projection Matrices
 }
 \description{
-    \code{popdemo} provides a set of tools designed for modelling population demography
+    This package provides a set of tools designed for modelling population demography
     using population projection matrix (PPM) models.  The focus is mainly on indices of transient dynamics,
     and the use of control theory (specifically transfer functions).  However,
     \code{popdemo} includes a number of tools focussing on other areas of demographic
@@ -72,8 +72,8 @@
     through simulation: \code{\link{convergence.time}}.\cr
 }
 \author{
-  Iain Stott <ims203@exeter.ac.uk>, 
+  Iain Stott <iainmstott@gmail.com>, 
   Dave Hodgson <D.J.Hodgson@exeter.ac.uk>, 
   Stuart Townley <S.B.Townley@exeter.ac.uk>
-  Maintainer: Iain Stott <ims203@exeter.ac.uk>
+  Maintainer: Iain Stott <iainmstott@gmail.com>
 }

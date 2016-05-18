@@ -1,6 +1,6 @@
-43adac407c4a7a92d07c1eb6ed4a186e *ChangeLog
-3899ef04b25ed6e964d7e1606990c803 *DESCRIPTION
-9857877f6b226fc01c5c80b958be8045 *NAMESPACE
+ef3c4efdd023cc059fa3c6ecff5192dc *ChangeLog
+991e1d84986456cbb8f41d19e3187d03 *DESCRIPTION
+d0b2fa0b904143e404c4e8ca22739fb4 *NAMESPACE
 e905407a568782011309a76f3a6c1f49 *R/Cohen.cumulative.R
 9c2bad3f4c63320fa3f112c7b55f3fef *R/Keyfitz.delta.R
 5ce524c0a8e58f4dbdfb1fd9eeb61259 *R/Kreiss.R
@@ -9,7 +9,7 @@ ac252e01648aefaad8e20d8e25ca8e95 *R/Matlab2R.R
 367e144595209b4a2bbdb16228ce936f *R/blockmatrix.R
 07f14cc2b934acd79a442af2921f0289 *R/convergence.time.R
 d6f987efd46845527a7c1fdce0e455ec *R/dr.R
-0541e40ee6839e13192ccd416c606d56 *R/elas.R
+4e7890f17a5c251f86afe12ccda9eb46 *R/elas.R
 c1259eb24cd1d573783b299bacc417c9 *R/firststepatt.R
 9dd485f80c3fe0b63a437732a0f47f83 *R/inertia.R
 57e4142629905378f919b0192a59af31 *R/inertia.tfa.R
@@ -31,7 +31,7 @@ bdfe105628d94b0cad81259790274cfb *R/print.tfamatrix.R
 af5be976cc93051438b5def6616eba25 *R/project.R
 6e7fa89d26942473c413cb9f7874f09d *R/projection.distance.R
 524f1424c54916037afcb5c7e7d76386 *R/reactivity.R
-425ca7e431c06e783a3b2885e27b5137 *R/sens.R
+fa510bb1c4527eee776ac8a613ea2980 *R/sens.R
 b55d12f3b48da06d74a274199d39daa6 *R/tf.R
 bbaf11d573402a7ec6969e94a3f27027 *R/tfa.R
 c4aba9d0427157198a814594fc1b3da0 *R/tfamatrix.R
@@ -55,7 +55,7 @@ e4b64f341b82f959cc832be1b6c741ee *man/R2Matlab.Rd
 cb058a696e94b3d3ce7d3af5e183025c *man/blockmatrix.Rd
 85968f191c8e7fcba229ec6933c18282 *man/convergence.time.Rd
 ebc96d8a5d7b16cc7c5eace3e3001e1e *man/dr.Rd
-bac4e982caf144b2753f5b5ea1821938 *man/elas.Rd
+bb491b0befd4cd994b3a5ed85528bdbe *man/elas.Rd
 ece897903d4fbc9bcb0d2b23ae1869bf *man/firststepatt.Rd
 e680fb835ecfa9121a6acb900d4cdc18 *man/inertia.Rd
 f09a9e6e9015ae84e86ec34a56221d71 *man/inertia.tfa.Rd
@@ -70,11 +70,11 @@ a501c3823486720634285d8d00047df2 *man/is.matrix_primitive.Rd
 d1841396b40ee28d3e7469b7054a9216 *man/plot.projection.Rd
 e7d626ca824a88e21f43f697b8cb3389 *man/plot.tfa.Rd
 8397f05d002b4772b70fd3e5933ff9f2 *man/plot.tfamatrix.Rd
-46e1f1d45e884997c7954abc766aaa37 *man/popdemo-package.Rd
+05ec9d28c8ff9030bee3c102a5e83beb *man/popdemo-package.Rd
 ff3d00f0245918f4de680a4cc51f7f1a *man/project.Rd
 42e20c3efedaaac89845e7bcc319a539 *man/projection.distance.Rd
 38c068b4a7719b6a4a7d23c127cb0315 *man/reactivity.Rd
-8930233cf09c3b1548c404119f802fcf *man/sens.Rd
+abc8957408e9e2b720d304e2d2cbba92 *man/sens.Rd
 db099d02c8201dc2f597b26b7780751f *man/tf.Rd
 7e0ee4e3a72ceae6ed6c262d4a50ae04 *man/tfa.Rd
 fbead9d42b98ec7676c3a78a85f94ef9 *man/tfamatrix.Rd

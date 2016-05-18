@@ -1,4 +1,5 @@
 ### Export all functions
+### Export all functions
 # functions useful for working with square matrices
 export(Matlab2R,R2Matlab,is.matrix_primitive,
        is.matrix_irreducible,is.matrix_ergodic,
@@ -32,3 +33,5 @@ S3method(print,tfamatrix)
 
 ### Import %^% from expm: this is the only function needed
 importFrom(expm, "%^%")
+### Import global functions from graphics for S3 plot methods
+importFrom("graphics", "axis", "layout", "lines", "par", "plot", "text")

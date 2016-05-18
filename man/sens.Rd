@@ -14,7 +14,8 @@
   }
   \item{eval}{
     the eigenvalue to evaluate.  Default is \code{eval="max"}, which evaluates the dominant
-    eigenvalue.  Otherwise, specifying e.g. \code{eval=2} will evaluate sensitivity of the
+    eigenvalue (the eigenvalue with largest REAL value: for a reducible matrix this may not be the 
+    first eigenvalue).  Otherwise, specifying e.g. \code{eval=2} will evaluate sensitivity of the
     eigenvalue with second-largest modulus.
   }
   \item{all}{

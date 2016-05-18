@@ -12,7 +12,7 @@ else{
 }
 w<-as.matrix(reigs$vectors[,val])
 v<-as.matrix(leigs$vectors[,val])
-S<-(v%*%t(w))/as.vector(t(v)%*%w)
+S<-(Conj(v)%*%t(w))/as.vector(Conj(t(v))%*%w)
 if(!all) S[A==0]<-0
 if(max(Im(S))>0) return(S) else(return(Re(S)))
 }
