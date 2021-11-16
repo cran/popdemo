@@ -122,15 +122,31 @@ respectively.
 }
 }
 \seealso{
-Other TransferFunctionAnalyses: \code{\link{tfa_inertia}},
-  \code{\link{tfa_lambda}}, \code{\link{tfam_inertia}},
-  \code{\link{tfam_lambda}}, \code{\link{tfs_lambda}}
+Other TransferFunctionAnalyses: 
+\code{\link{tfa_inertia}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_inertia}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_lambda}()}
 
-Other PerturbationAnalyses: \code{\link{elas}},
-  \code{\link{sens}}, \code{\link{tfa_inertia}},
-  \code{\link{tfa_lambda}}, \code{\link{tfam_inertia}},
-  \code{\link{tfam_lambda}}, \code{\link{tfs_lambda}}
+Other PerturbationAnalyses: 
+\code{\link{elas}()},
+\code{\link{sens}()},
+\code{\link{tfa_inertia}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_inertia}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_lambda}()}
 }
-\concept{
-KEYWORDS
-}
+\concept{PVA}
+\concept{PerturbationAnalyses}
+\concept{TransferFunctionAnalyses}
+\concept{demography}
+\concept{ecology}
+\concept{perturbation}
+\concept{population}
+\concept{population viability}
+\concept{resilience}
+\concept{systems control}
+\concept{transfer function}
+\concept{transient dynamics}

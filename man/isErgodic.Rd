@@ -58,9 +58,12 @@ prevents mistakes.
 }
 }
 \seealso{
-Other PerronFrobeniusDiagnostics: \code{\link{isIrreducible}},
-  \code{\link{isPrimitive}}
+Other PerronFrobeniusDiagnostics: 
+\code{\link{isIrreducible}()},
+\code{\link{isPrimitive}()}
 }
-\concept{
-ergodicity ergodic nonergodic Perron Frobenius
-}
+\concept{Perron Frobenius}
+\concept{PerronFrobeniusDiagnostics}
+\concept{ergodic}
+\concept{ergodicity}
+\concept{nonergodic}

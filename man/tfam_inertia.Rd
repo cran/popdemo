@@ -4,8 +4,16 @@
 \alias{tfam_inertia}
 \title{Transfer function Analysis}
 \usage{
-tfam_inertia(A, bound = NULL, vector = "n", elementtype = NULL,
-  Flim = c(-1, 10), Plim = c(-1, 10), plength = 100, digits = 1e-10)
+tfam_inertia(
+  A,
+  bound = NULL,
+  vector = "n",
+  elementtype = NULL,
+  Flim = c(-1, 10),
+  Plim = c(-1, 10),
+  plength = 100,
+  digits = 1e-10
+)
 }
 \arguments{
 \item{A}{a square, primitive, nonnegative numeric matrix of any dimension}
@@ -130,15 +138,32 @@ prevent the problem of singular matrices (see details in
 \seealso{
 S3 plotting method: \code{\link{plot.tfam}}
 
-Other TransferFunctionAnalyses: \code{\link{tfa_inertia}},
-  \code{\link{tfa_lambda}}, \code{\link{tfam_lambda}},
-  \code{\link{tfs_inertia}}, \code{\link{tfs_lambda}}
+Other TransferFunctionAnalyses: 
+\code{\link{tfa_inertia}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_inertia}()},
+\code{\link{tfs_lambda}()}
 
-Other PerturbationAnalyses: \code{\link{elas}},
-  \code{\link{sens}}, \code{\link{tfa_inertia}},
-  \code{\link{tfa_lambda}}, \code{\link{tfam_lambda}},
-  \code{\link{tfs_inertia}}, \code{\link{tfs_lambda}}
+Other PerturbationAnalyses: 
+\code{\link{elas}()},
+\code{\link{sens}()},
+\code{\link{tfa_inertia}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_inertia}()},
+\code{\link{tfs_lambda}()}
 }
-\concept{
-KEYWORDS
-}
+\concept{PVA}
+\concept{PerturbationAnalyses}
+\concept{TransferFunctionAnalyses}
+\concept{demography}
+\concept{ecology}
+\concept{nonlinear}
+\concept{perturbation}
+\concept{population}
+\concept{population viability}
+\concept{resilience}
+\concept{systems control}
+\concept{transfer function}
+\concept{transient dynamics}

@@ -134,15 +134,32 @@ and examples below)
 \seealso{
 S3 plotting method: \code{\link{plot.tfa}}
 
-Other TransferFunctionAnalyses: \code{\link{tfa_lambda}},
-  \code{\link{tfam_inertia}}, \code{\link{tfam_lambda}},
-  \code{\link{tfs_inertia}}, \code{\link{tfs_lambda}}
+Other TransferFunctionAnalyses: 
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_inertia}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_inertia}()},
+\code{\link{tfs_lambda}()}
 
-Other PerturbationAnalyses: \code{\link{elas}},
-  \code{\link{sens}}, \code{\link{tfa_lambda}},
-  \code{\link{tfam_inertia}}, \code{\link{tfam_lambda}},
-  \code{\link{tfs_inertia}}, \code{\link{tfs_lambda}}
+Other PerturbationAnalyses: 
+\code{\link{elas}()},
+\code{\link{sens}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_inertia}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_inertia}()},
+\code{\link{tfs_lambda}()}
 }
-\concept{
-KEYWORDS
-}
+\concept{PVA}
+\concept{PerturbationAnalyses}
+\concept{TransferFunctionAnalyses}
+\concept{demography}
+\concept{ecology}
+\concept{nonlinear}
+\concept{perturbation}
+\concept{population}
+\concept{population viability}
+\concept{resilience}
+\concept{systems control}
+\concept{transfer function}
+\concept{transient dynamics}

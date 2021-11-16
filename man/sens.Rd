@@ -48,11 +48,16 @@ subdominant eigenvalues.
 }
 }
 \seealso{
-Other PerturbationAnalyses: \code{\link{elas}},
-  \code{\link{tfa_inertia}}, \code{\link{tfa_lambda}},
-  \code{\link{tfam_inertia}}, \code{\link{tfam_lambda}},
-  \code{\link{tfs_inertia}}, \code{\link{tfs_lambda}}
+Other PerturbationAnalyses: 
+\code{\link{elas}()},
+\code{\link{tfa_inertia}()},
+\code{\link{tfa_lambda}()},
+\code{\link{tfam_inertia}()},
+\code{\link{tfam_lambda}()},
+\code{\link{tfs_inertia}()},
+\code{\link{tfs_lambda}()}
 }
-\concept{
-perturbation sensitivity elasticity
-}
+\concept{PerturbationAnalyses}
+\concept{elasticity}
+\concept{perturbation}
+\concept{sensitivity}

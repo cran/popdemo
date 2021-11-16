@@ -85,10 +85,20 @@ Transfer function methods for inertia: \code{\link{inertia.tfa}},
 \code{\link{inertia.tfamatrix}}, \code{\link{inertia.tfsens}}, 
 \code{\link{inertia.tfsensmatrix}}
 
-Other TransientIndices: \code{\link{Kreiss}},
-  \code{\link{maxamp}}, \code{\link{maxatt}},
-  \code{\link{reac}}
+Other TransientIndices: 
+\code{\link{Kreiss}()},
+\code{\link{maxamp}()},
+\code{\link{maxatt}()},
+\code{\link{reac}()}
 }
-\concept{
-transient amplification attenuation unstable instability stable equivalent ratio
-}
+\concept{TransientIndices}
+\concept{amplification}
+\concept{attenuation}
+\concept{compensation}
+\concept{instability}
+\concept{population structure}
+\concept{resilience}
+\concept{resistance}
+\concept{stable equivalent ratio}
+\concept{transient dynamics}
+\concept{unstable}

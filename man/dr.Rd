@@ -52,9 +52,13 @@ subdominant eigenvalue.
 }
 }
 \seealso{
-Other ConvergenceMeasures: \code{\link{convt}},
-  \code{\link{truelambda}}
+Other ConvergenceMeasures: 
+\code{\link{convt}()},
+\code{\link{truelambda}()}
 }
-\concept{
-converge convergence resilience stability
-}
+\concept{ConvergenceMeasures}
+\concept{converge}
+\concept{convergence}
+\concept{resilience}
+\concept{return time}
+\concept{stability}

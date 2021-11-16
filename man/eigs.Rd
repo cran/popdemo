@@ -82,6 +82,11 @@ have equal absolute magnitude", for information.
   eigs(Tort)
 
 }
-\concept{
-asymptotic growth population structure reproductive value eigenvalues
-}
+\concept{Eigenstuff}
+\concept{GrowthMeasures}
+\concept{asymptotic}
+\concept{eigenvalues}
+\concept{growth}
+\concept{population structure}
+\concept{reproductive value}
+\concept{stable}
