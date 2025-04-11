@@ -10,7 +10,7 @@
 #' be \code{"p"}, \code{"lambda"} or \code{"inertia"}. Defaults to
 #' \code{xvar="p"} and \code{yvar="lambda"} for objects created using
 #' \code{tfam_lambda}, and \code{xvar="p"} and \code{yvar="inertia"} for 
-#' objects created using code{tfam_inertia}.
+#' objects created using \code{tfam_inertia}.
 #' @param mar the margin limits on the plots: see \code{\link{par}}
 #' @param ...  arguments to be passed to methods: see \code{\link{par}} and
 #' \code{\link{plot}}.

@@ -4,19 +4,19 @@ library(popdemo)
 options(digits = 4)
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  # Install dependencies from CRAN:
-#  install.packages(c("devtools", "expm", "MCMCpack", "markovchain"))
-#  
-#  # Install stable version from GitHub (recommended):
-#  # NOTE don't forget to change the version number!
-#  devtools::install_github("iainmstott/popdemo/x.x-x/popdemo") #x.x-x is the desired version number
-#  
-#  # Install development version 'popdemoDev' (not recommended):
-#  devtools::install_github("iainmstott/popdemo/Dev/popdemoDev", ref = "development")
-#  
+# # Install dependencies from CRAN:
+# install.packages(c("devtools", "expm", "MCMCpack", "markovchain"))
+# 
+# # Install stable version from GitHub (recommended):
+# # NOTE don't forget to change the version number!
+# devtools::install_github("iainmstott/popdemo/x.x-x/popdemo") #x.x-x is the desired version number
+# 
+# # Install development version 'popdemoDev' (not recommended):
+# devtools::install_github("iainmstott/popdemo/Dev/popdemoDev", ref = "development")
+# 
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  install.packages("popdemo")
+# install.packages("popdemo")
 
 ## ----example, echo = -1-------------------------------------------------------
 an_input <- function() cat("an output")

@@ -74,7 +74,7 @@
 #' \describe{
 #' \item{p}{perturbation magnitudes}
 #' \item{lambda}{dominant eigenvalues of perturbed matrices}
-#' item{inertia}{inertias of perturbed matrices}
+#' \item{inertia}{inertias of perturbed matrices}
 #' }
 #' (Note that \code{p} will not be exactly the same as \code{prange} when 
 #' \code{prange} is specified, as the code calculates p for a given lambda 
