@@ -8,9 +8,12 @@
 #' perform a stochastic' projection where the matrix varies with each timestep. 
 #' The sequence of matrices is determined using \code{Aseq}. Matrices must be 
 #' square, non-negative and numeric, and all matrices must have the same dimension. 
-#' @param what what should be returned. A character vector with possible entries
-#' "lambda" (to calcualate stochastic growth), "var" (to calculate variance in 
-#' stochastic growth) and/or "all" (to calculate both).
+#' @param what Deprecated: later versions will always return all
+#' values of growth, log growth and variance in growth. This argument determines 
+#' what should be returned. A character vector with possible entries
+#' "lambda" (to calcualate stochastic growth), "log_lambda" (to calcualate logarithm 
+#' of stochastic growth), "var" (to calculate variance in log stochastic growth) 
+#' and/or "all" (to calculate all values).
 #' @param vector (optional) a numeric vector describing the age/stage 
 #' distribution used to calculate the projection. If \code{vector} is not 
 #' specified, a random vector is generated. Long-term stochastic dynamics should 
@@ -47,13 +50,18 @@
 #' matrix projection model.
 #'
 #' @return 
-#' A numeric vector with two possible elements: "lambda" (the stochastic population
-#' growth rate) and "var" (the variance in stochastic population growth rate). Values
+#' A numeric vector with three possible elements: "lambda" (the geometric mean stochastic population
+#' growth rate) "log_lambda" (the arithmetic mean of the logarithm of the stochastic population growth rate) 
+#' and "var" (the variance of the logarithm of the stochastic population growth rate). Values
 #' returned depend on what's passed to \code{what}.
 #'
 #' @examples
 #'   # load the Polar bear data
 #'   ( data(Pbear) )
+#'
+#'   # Find the stochastic info for a time series with uniform probability of each
+#'   # matrix
+#'   ( all_unif <- stoch(Pbear, what = "all", Aseq = "unif") )
 #'
 #'   # Find the stochastic growth for a time series with uniform probability of each
 #'   # matrix
@@ -68,7 +76,7 @@
 #'   q <- 0.5
 #'   prob_seq <- c(rep(1-q,3)/3, rep(q,2)/2)
 #'   Pbear_seq <- matrix(rep(prob_seq,5), 5, 5)
-#'   ( var_unif <- stoch(Pbear, what = "var", Aseq = Pbear_seq) )
+#'   ( all_q <- stoch(Pbear, what = "all", Aseq = Pbear_seq) )
 #'   
 #' @concept stochastic growth
 #' @concept variance
@@ -109,13 +117,20 @@ if (is.list(A) & length(A) > 1) {
 order <- dim(A)[1]
 ##what should be calculated?
 ifelse("lambda" %in% what, growth <- TRUE, growth <- FALSE)
+ifelse("log_lambda" %in% what, log_growth <- TRUE, log_growth <- FALSE)
 ifelse("var" %in% what, variance <- TRUE, variance <- FALSE)
 if("all" %in% what){
     growth <- TRUE
+    log_growth <- TRUE
     variance <- TRUE
 }
-if(!growth & !variance) stop('"what" does not contain the right information')
-## check vector
+if(!growth & !log_growth & !variance) stop('"what" does not contain the right information')
+if (!missing(what)) {
+    warning(
+        "Argument 'what' is deprecated and later versions will always return all\n
+        values of growth, log growth and variance in growth."
+    )
+}## check vector
 if(!is.null(vector) & length(vector) != order){
     stop("vector must be equal to dimension of A")
 }
@@ -128,14 +143,27 @@ pr <- project(A = A, vector = vector, time = iterations, standard.A = FALSE,
 ##calculate the stuff
 #work out per-timestep growth
 gr <- pr[(discard:iterations) + 1] / pr[discard:iterations]
-#find the per-timestep mean growth (stochastic growth)
-if(growth) gr_mean <- mean(gr)
-#find the per-timestep variance in growth
-if(variance) gr_var <- stats::var(gr)
-if(growth & variance) final <- data.frame(lambda = gr_mean,
-                                          var = gr_var)
-if(growth & !variance) final <- gr_mean
-if(!growth & variance) final <- gr_var
+# find the per-timestep mean growth (stochastic growth)
+if (growth) gr_mean <- exp(mean(log(gr)))
+# fin the per-timestep mean log growth
+if (log_growth) log_gr_mean <- mean(log(gr))
+# find the per-timestep variance in growth
+if (variance) gr_var <- stats::var(log(gr))
+if (growth & log_growth & variance) {
+    final <- data.frame(lambda = gr_mean, log_lambda = log_gr_mean, var = gr_var)
+}
+if (growth & log_growth & !variance) {
+    final <- data.frame(lambda = gr_mean, log_lambda = log_gr_mean)
+}
+if (growth & !log_growth & variance) {
+    final <- data.frame(lambda = gr_mean, var = gr_var)
+}
+if (!growth & log_growth & variance) {
+    final <- data.frame(log_lambda = log_gr_mean, var = gr_var)
+}
+if (growth & !log_growth & !variance) final <- data.frame(lambda = gr_mean)
+if (!growth & log_growth & !variance) final <- data.frame(log_lambda = log_gr_mean)
+if (!growth & !log_growth & variance) final <- data.frame(var = gr_var)
 return(final)
 }
 

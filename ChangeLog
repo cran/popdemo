@@ -1,5 +1,10 @@
 ################################################################################
 CHANGELOG
+Version 1.3-3  Fixed bug in stoch function which previously calculated 
+               arithmetic mean lambda, but now correctly calculated geometric 
+               mean lambda, and additionally returns arithmetic mean log lambda
+               (both returned for backwards compatibility). Fixed broken 
+               vignette image link. 
 Version 1.3-2  Fixed check issue with "lost braces"
 Version 1.3-1  Fixed issue with plot methods which was causing build error, and 
                tidied up reference links and keywords sections.

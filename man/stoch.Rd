@@ -21,9 +21,12 @@ perform a stochastic' projection where the matrix varies with each timestep.
 The sequence of matrices is determined using \code{Aseq}. Matrices must be 
 square, non-negative and numeric, and all matrices must have the same dimension.}
 
-\item{what}{what should be returned. A character vector with possible entries
-"lambda" (to calcualate stochastic growth), "var" (to calculate variance in 
-stochastic growth) and/or "all" (to calculate both).}
+\item{what}{Deprecated: later versions will always return all
+values of growth, log growth and variance in growth. This argument determines 
+what should be returned. A character vector with possible entries
+"lambda" (to calcualate stochastic growth), "log_lambda" (to calcualate logarithm 
+of stochastic growth), "var" (to calculate variance in log stochastic growth) 
+and/or "all" (to calculate all values).}
 
 \item{Aseq}{the sequence of matrices in a stochastic projection. 
 \code{Aseq} may be either:
@@ -62,8 +65,9 @@ errors if a matrix breaks any assumptions. Set \code{PREcheck=FALSE} if you
 want to bypass these checks.}
 }
 \value{
-A numeric vector with two possible elements: "lambda" (the stochastic population
-growth rate) and "var" (the variance in stochastic population growth rate). Values
+A numeric vector with three possible elements: "lambda" (the geometric mean stochastic population
+growth rate) "log_lambda" (the arithmetic mean of the logarithm of the stochastic population growth rate) 
+and "var" (the variance of the logarithm of the stochastic population growth rate). Values
 returned depend on what's passed to \code{what}.
 }
 \description{
@@ -76,6 +80,10 @@ matrix projection model.
 \examples{
   # load the Polar bear data
   ( data(Pbear) )
+
+  # Find the stochastic info for a time series with uniform probability of each
+  # matrix
+  ( all_unif <- stoch(Pbear, what = "all", Aseq = "unif") )
 
   # Find the stochastic growth for a time series with uniform probability of each
   # matrix
@@ -90,7 +98,7 @@ matrix projection model.
   q <- 0.5
   prob_seq <- c(rep(1-q,3)/3, rep(q,2)/2)
   Pbear_seq <- matrix(rep(prob_seq,5), 5, 5)
-  ( var_unif <- stoch(Pbear, what = "var", Aseq = Pbear_seq) )
+  ( all_q <- stoch(Pbear, what = "all", Aseq = Pbear_seq) )
   
 }
 \concept{population}
