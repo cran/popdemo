@@ -1,5 +1,5 @@
-1ee45155d9b24088f81dd863f93bd6ef *ChangeLog
-1776813e71f9cfd8aecf7441d247cbf5 *DESCRIPTION
+f0e42d31dfd14e5d19ef9330c8660600 *ChangeLog
+514d3ac07f3d65da3b6198b87e79c192 *DESCRIPTION
 c66b271be9e5063fd659376b1daedd20 *NAMESPACE
 a49cf3814a998013e2cf1b803879c1db *R/CohenD.R
 311bb37ec8c248a0389728916d8f5adf *R/KeyfitzD.R
@@ -27,7 +27,7 @@ f6e7790e1be9b0f6ac483b79d37eb128 *R/isIrreducible.R
 ebe2aec0601b1b2542a39297be26b244 *R/maxamp.R
 b14af221aa36508ad1b4fc2e0555399a *R/maxatt.R
 fca330f35a2aed69513e2285f7ba51b2 *R/popdemo-deprecated.R
-8f3900b45e588b52d5f79d6809db2a5c *R/popdemo-onAttach.R
+70ee236a4aacb38ba91ad55bfc0aa9f6 *R/popdemo-onAttach.R
 86369b7d03cc817dd6c20a5e73a0d16c *R/popdemo-package.R
 525a8a011c4c452fa0052ca117c808fc *R/project.R
 8317c83bc5dd26bb1094d90f220ad9f7 *R/projectionD.R
@@ -44,9 +44,9 @@ ef7b837975d1776e974a23315eede12b *R/truelambda.R
 0c02c183f0f2fa9cee7e550080a59144 *build/vignette.rds
 66524f9d6a6482481ea13ad15fde719a *data/Pbear.rda
 3dc6f8ff298de5cdbc71dfb1e62b88e7 *data/Tort.rda
-13051348454d0ed0250838e107a11b97 *inst/doc/popdemo.R
-401c9f7041c54875da6d554e76e12419 *inst/doc/popdemo.Rmd
-1b2307ccea3710fe382cd20ef3d55bd7 *inst/doc/popdemo.html
+69109651d6f05cd0c4a31103fe4c2e2e *inst/doc/popdemo.R
+c068c6099cc22076ba87994e41db68f5 *inst/doc/popdemo.Rmd
+b4d406a70e5ac8164ca48af896e0bcce *inst/doc/popdemo.html
 be9784c80507f40cf607a421197d0a71 *man/CohenD.Rd
 2dc46fd359db2adad0c547ba1f5b70f3 *man/KeyfitzD.Rd
 9752d7592b581d469c830b2ffcb8bcfd *man/Kreiss.Rd
@@ -83,4 +83,6 @@ db43c3dfed0c4123bb80fcaa9a033a05 *man/tfam_inertia.Rd
 c834c3bd03df120311fdf17401bccdef *man/tfs_inertia.Rd
 1c017a513162a8857d837e17e345ceeb *man/tfs_lambda.Rd
 4f97fc7dd6f948acf8e1b007752e1cb0 *man/truelambda.Rd
-401c9f7041c54875da6d554e76e12419 *vignettes/popdemo.Rmd
+7fc56e4e8dbd59a8b2cd3db07db41feb *vignettes/imgs/Baby_Desert_Tortoise_640x424.jpg
+8b5aa956fbc1d086379f5cd47d72291c *vignettes/imgs/Polar_Bear_640x427.jpg
+c068c6099cc22076ba87994e41db68f5 *vignettes/popdemo.Rmd

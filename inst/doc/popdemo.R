@@ -28,7 +28,7 @@ data(Tort); Tort
 
 
 ## ----echo = FALSE-------------------------------------------------------------
-Tortpic <- magick::image_read("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Baby_Desert_Tortoise_%2816490346262%29.jpg/1920px-Baby_Desert_Tortoise_%2816490346262%29.jpg?_=20150803190406")
+Tortpic <- magick::image_read("imgs/Baby_Desert_Tortoise_640x424.jpg")
 par(mar = c(0, 0, 0, 0))
 plot(as.raster(Tortpic))
 text(10, 10, adj = c (0, 0), col = "white",
@@ -202,7 +202,7 @@ data(Pbear); Pbear
 Pbearvec <- c(0.106, 0.068, 0.106, 0.461, 0.151, 0.108)
 
 ## ----echo = FALSE-------------------------------------------------------------
-Pbearpic <- magick::image_read("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Polar-bear-arctic-wildlife-snow-53425.jpg/1920px-Polar-bear-arctic-wildlife-snow-53425.jpg?_=20180209135802")
+Pbearpic <- magick::image_read("imgs/Polar_Bear_640x427.jpg")
 par(mar = c(0, 0, 0, 0))
 plot(as.raster(Pbearpic))
 text(10, 10, adj = c (0, 0), col = "white",
